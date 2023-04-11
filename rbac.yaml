@@ -27,7 +27,7 @@ kind: ClusterRole
 metadata:
   name: cluster-reader
 rules:
-- apiGroups: [""]
+- apiGroups: ["*"]
   resources: ["nodes","namespaces","services","deployments","customresourcedefinitions"]
   verbs: ["get", "watch", "list"]
 ---
